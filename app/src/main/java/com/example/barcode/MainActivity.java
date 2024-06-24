@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             // Iniciar a leitura do código de barras com a atividade personalizada
             IntentIntegrator integrator = new IntentIntegrator(MainActivity.this);
             integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
-            integrator.setPrompt("Scan a barcode");
+            integrator.setPrompt("Ler Código");
             integrator.setCameraId(0);  // Use a câmera traseira
             integrator.setOrientationLocked(true); // Bloqueia a orientação para a atual (vertical)
             integrator.setBeepEnabled(false);
